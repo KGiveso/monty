@@ -39,7 +39,7 @@ typedef struct instruction_s
 } instruction_t;
 
 /* basic operations functions */
-void push_(stack_t **put, unsigned int line);
+void push_(stack_t **put, unsigned int line, char *arg);
 void pall_(stack_t **put, unsigned int line);
 void pint_(stack_t **put, unsigned int line);
 void pop_(stack_t **put, unsigned int line);
