@@ -1,15 +1,13 @@
 #include "monty.h"
-/*global variable*/
-int num;
 /**
-* push_ - function that inserts new node in the beginning of the
-* doubly linked list
+* push_ - inserts new node starting from double linked ls
 * @put: pointer
 * @line: line
 */
 void push_(stack_t **put, __attribute__((unused)) unsigned int line)
 {
 stack_t *new_node = malloc(sizeof(stack_t));
+int num = 0;
 
 if (new_node == NULL)
 {
@@ -32,7 +30,7 @@ new_node->next = *put;
 }
 }
 /**
-* pall_ - function that prints all elements in a doubly linked list
+* pall_ -prints all elements in a double linked list
 * @put: pointer
 * @line: line
 */
@@ -47,8 +45,8 @@ tmp = tmp->next;
 }
 }
 /**
-* pint_ - function that prints the value of the top element
-* @top: pointer
+* pint_ -prints the value of the element
+* @put: pointer
 * @line: line
 */
 void pint_(stack_t **put, unsigned int line)

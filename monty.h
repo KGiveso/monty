@@ -8,7 +8,7 @@
 #include <ctype.h>
 #include <sys/types.h>
 
-/*  extern int n */
+/*  extern int num */
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -39,7 +39,7 @@ typedef struct instruction_s
 } instruction_t;
 
 /* basic operations functions */
-void push_(stack_t **put, unsigned int line, char *arg);
+void push_(stack_t **put, unsigned int line);
 void pall_(stack_t **put, unsigned int line);
 void pint_(stack_t **put, unsigned int line);
 void pop_(stack_t **put, unsigned int line);
