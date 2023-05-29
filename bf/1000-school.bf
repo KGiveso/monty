@@ -1,2 +1,2 @@
-bf bf/1000-school.bf
+bf print_school.bf
 
